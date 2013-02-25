@@ -1,0 +1,77 @@
+@header-height: 30px;
+@toolbox-width: 200px;
+
+.gaiabuilder {
+
+  font-family: "mozTT",sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+
+  h1.app-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: @header-height;
+    margin: 0px;
+  }
+
+  .widget-toolbox {
+    position: absolute;
+    top: @header-height;
+    bottom: 0px;
+    left: 0px;
+    width: @toolbox-width;
+    box-shadow: 3px 0px 3px #777;
+  }
+
+  .application-design {
+    position: absolute;
+    top: @header-height;
+    bottom: 0px;
+    left: @toolbox-width;
+    right: 0px;
+  }
+  .phone-frame {
+    background-image: url("http://localhost/gaiabuilder/style/less/../../img/phone_frame.png");
+    height: 636px;
+    left: 50%;
+    margin-left: -187px;
+    margin-top: -345px;
+    position: relative;
+    top: 50%;
+    width: 340px;
+    padding-left: 36px;
+    padding-top: 63px;
+  }
+
+  .temp-dragged {
+    border: 1px solid blue;
+  }
+
+  .app-content {
+    height: 480px;
+    width: 320px;
+  }
+
+}
+
+@font-face {
+  font-family: "mozTT";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/moztt_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moztt_regular-webfont.woff") format("woff"), url("../fonts/moztt_regular-webfont.ttf") format("truetype"), url("../fonts/moztt_regular-webfont.svg#mozttregular") format("svg");
+}
+@font-face {
+  font-family: "mozTT";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/moztt_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moztt_light-webfont.woff") format("woff"), url("../fonts/moztt_light-webfont.ttf") format("truetype"), url("../fonts/moztt_light-webfont.svg#moztt_lightregular") format("svg");
+}
+@font-face {
+  font-family: "mozTT";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/moztt_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moztt_medium-webfont.woff") format("woff"), url("../fonts/moztt_medium-webfont.ttf") format("truetype"), url("../fonts/moztt_medium-webfont.svg#moztt_mediumregular") format("svg");
+}
+
