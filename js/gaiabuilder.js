@@ -2,21 +2,18 @@ $(function() {
 
   var components = [
     {
-      tpl: '<button>Button</button>',
+      tpl: '<label>Header</label><section role="region"><header><h1 contenteditable>Header</h1></header></section>'
     },
     {
-      tpl: '<section role="region"><header><h1>Header</h1></header></section>'
-    },
-    {
-      tpl: '<div role="toolbar"><ul><li><button class="pack-icon-delete">Delete</button></li></ul></div>'
+      tpl: '<label>Toolbar</label><div role="toolbar"><ul></ul><ul></div>'  
     }
   ]
-  , toolbox = $('.widget-toolbox')
+  , toolbox = $('.widget-toolbox ul')
   , appContent = $('.app-content')
   , tempDragged;
 
   $.each(components, function(i, component) {
-    $('<div>')
+    $('<li>')
       .data('tpl', component.tpl)
       .html(component.tpl)
       .appendTo(toolbox)
