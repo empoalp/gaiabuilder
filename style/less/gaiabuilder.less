@@ -1,24 +1,11 @@
 @import "buildingfirefoxos.less";
-
-@header-height: 130px;
-@toolbox-width: 200px;
+@import "buildingblocks.less";
 
 .gaiabuilder {
 
-  .widget-toolbox {
-    position: absolute;
-    top: @header-height;
-    bottom: 0px;
-    left: 30px;
-    width: @toolbox-width;
-  }
 
   .application-design {
-    position: absolute;
-    top: @header-height;
-    bottom: 0px;
-    left: @toolbox-width + 60px;
-    right: 0px;
+    margin-left: 330px;
   }
   .phone-frame {
     background: url("../../img/phone_frame.png") 0 -20px no-repeat;
@@ -38,6 +25,10 @@
     width: 320px;
     left: 36px;
     top: 43px;
+
+    > label {
+      display: none;
+    }
   }
 
 }
